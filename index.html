@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="NEXORA PS — شروحات PS4، أدوات وتطبيقات، ملفات، مقالات وأخبار تقنية في مكان واحد.">
+  <title>NEXORA PS | اكتشف عالم البلايستيشن</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <span><span class="live-dot"></span> مرحبًا بك في مجتمع NEXORA</span>
+      <span class="top-strip-message">شروحات • أدوات • تطبيقات • تقنية</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="NEXORA PS - الصفحة الرئيسية">
+        <span class="brand-symbol">N<span>X</span></span>
+        <span class="brand-copy">
+          <strong>NEXORA <b>PS</b></strong>
+          <small>PLAY · EXPLORE · DISCOVER</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="القائمة الرئيسية">
+        <a class="nav-link active" href="#home">الرئيسية</a>
+        <a class="nav-link" href="#categories">الأقسام</a>
+        <a class="nav-link" href="#posts">المنشورات</a>
+        <a class="nav-link" href="#about">عن الموقع</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="headerSearchToggle" aria-label="البحث">⌕</button>
+        <button class="button button-small button-outline" id="loginOpen">تسجيل الدخول</button>
+        <button class="button button-small button-primary" id="registerOpen">انضم إلينا <span>↗</span></button>
+        <div class="user-chip" id="userChip" hidden>
+          <span class="user-avatar" id="userAvatar">N</span>
+          <span id="userDisplayName">عضو</span>
+          <button id="logoutButton" class="logout-button" aria-label="تسجيل الخروج">↪</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-search container" id="headerSearch" hidden>
+      <label class="search-field">
+        <span aria-hidden="true">⌕</span>
+        <input id="headerSearchInput" type="search" placeholder="ابحث عن شروحات أو ملفات أو تطبيقات..." autocomplete="off">
+        <kbd>Enter</kbd>
+      </label>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-mark">✦</span> منصتك لعالم البلايستيشن والتقنية</div>
+
+          <h1>
+            اكتشف أكثر.<br>
+            <span class="gradient-text">تعلّم بلا حدود.</span>
+          </h1>
+
+          <p class="hero-description">
+            من شروحات PS4 وأدواته إلى التطبيقات والملفات والمقالات التقنية؛
+            اكتشف محتوى مرتبًا، وشروحات واضحة، ومصادر تجمع ما يهمك في مكان واحد.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#posts" class="button button-primary button-large">استكشف المنشورات <span>←</span></a>
+            <a href="#categories" class="button button-glass button-large">اكتشف الأقسام <span>⌄</span></a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="avatar-stack" aria-hidden="true">
+              <span>🎮</span><span>⚡</span><span>💻</span>
+            </div>
+            <p><strong>كل ما يهمك في مكان واحد</strong><br><span>واجهة صُممت لعشاق الألعاب والتقنية</span></p>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="تصميم بصري لعالم الألعاب والتقنية">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-glow"></div>
+
+          <div class="floating-label floating-label-top">
+            <span class="floating-icon purple">⌘</span>
+            <span><strong>PS4 HUB</strong><small>شروحات وأدوات</small></span>
+          </div>
+
+          <div class="console-scene">
+            <div class="console-light"></div>
+            <div class="console">
+              <div class="console-side"></div>
+              <div class="console-surface">
+                <div class="console-line"></div>
+                <div class="console-mark">N</div>
+              </div>
+              <div class="console-base"></div>
+            </div>
+            <div class="controller">🎮</div>
+          </div>
+
+          <div class="floating-label floating-label-bottom">
+            <span class="floating-icon cyan">↗</span>
+            <span><strong>EXPLORE MORE</strong><small>اكتشف محتوى جديدًا</small></span>
+          </div>
+
+          <div class="art-caption">YOUR GAMING <span>UNIVERSE.</span></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-bottom-line"></div>
+        <div class="quick-stats">
+          <div class="quick-stat">
+            <span class="stat-icon">◈</span>
+            <div><strong>شروحات</strong><small>خطوة بخطوة</small></div>
+          </div>
+          <div class="quick-stat">
+            <span class="stat-icon">⌘</span>
+            <div><strong>أدوات وملفات</strong><small>مصنفة بعناية</small></div>
+          </div>
+          <div class="quick-stat">
+            <span class="stat-icon">✳</span>
+            <div><strong>محتوى متنوع</strong><small>ألعاب وتقنية</small></div>
+          </div>
+          <div class="quick-stat">
+            <span class="stat-icon">♡</span>
+            <div><strong>مجتمع تفاعلي</strong><small>تعليقات ونقاشات</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">EXPLORE CATEGORIES</span>
+            <h2>تصفّح حسب <span class="gradient-text">اهتمامك</span></h2>
+            <p>اختر القسم الذي تريد، واكتشف المحتوى الخاص به.</p>
+          </div>
+          <a class="text-link" href="#posts">كل المنشورات <span>←</span></a>
+        </div>
+
+        <div class="categories-grid">
+          <button class="category-card" data-category="شروحات PS4">
+            <span class="category-number">01</span>
+            <span class="category-icon icon-play">🎮</span>
+            <span class="category-text"><strong>شروحات PS4</strong><small>إعدادات، أدلة وحلول</small></span>
+            <span class="category-arrow">↙</span>
+          </button>
+
+          <button class="category-card" data-category="ملفات وأدوات">
+            <span class="category-number">02</span>
+            <span class="category-icon icon-files">📦</span>
+            <span class="category-text"><strong>ملفات وأدوات</strong><small>موارد وروابط تحميل</small></span>
+            <span class="category-arrow">↙</span>
+          </button>
+
+          <button class="category-card" data-category="تطبيقات">
+            <span class="category-number">03</span>
+            <span class="category-icon icon-apps">⚡</span>
+            <span class="category-text"><strong>التطبيقات</strong><small>برامج وأدوات مساعدة</small></span>
+            <span class="category-arrow">↙</span>
+          </button>
+
+          <button class="category-card" data-category="أخبار وتقنية">
+            <span class="category-number">04</span>
+            <span class="category-icon icon-news">◉</span>
+            <span class="category-text"><strong>أخبار وتقنية</strong><small>مستجدات عالم الألعاب</small></span>
+            <span class="category-arrow">↙</span>
+          </button>
+
+          <button class="category-card" data-category="مقالات">
+            <span class="category-number">05</span>
+            <span class="category-icon icon-articles">✎</span>
+            <span class="category-text"><strong>مقالات</strong><small>معرفة وتجارب تقنية</small></span>
+            <span class="category-arrow">↙</span>
+          </button>
+
+          <button class="category-card category-card-all" data-category="الكل">
+            <span class="category-number">06</span>
+            <span class="category-icon icon-all">✦</span>
+            <span class="category-text"><strong>كل المحتوى</strong><small>استكشف المكتبة كاملة</small></span>
+            <span class="category-arrow">↙</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section posts-section" id="posts">
+      <div class="container">
+        <div class="section-heading posts-heading">
+          <div>
+            <span class="section-kicker">THE LATEST FROM NEXORA</span>
+            <h2>آخر <span class="gradient-text">المنشورات</span></h2>
+            <p>شروحات ومقالات وموارد؛ اختر ما تريد واستكمل القراءة.</p>
+          </div>
+          <label class="search-field posts-search">
+            <span aria-hidden="true">⌕</span>
+            <input id="postSearch" type="search" placeholder="ابحث في المنشورات..." autocomplete="off">
+          </label>
+        </div>
+
+        <div class="posts-toolbar">
+          <div class="filter-list" id="filterList" aria-label="فلترة المنشورات">
+            <button class="filter-button active" data-filter="الكل">الكل <span class="filter-count">↙</span></button>
+            <button class="filter-button" data-filter="شروحات PS4">شروحات PS4</button>
+            <button class="filter-button" data-filter="ملفات وأدوات">ملفات وأدوات</button>
+            <button class="filter-button" data-filter="تطبيقات">تطبيقات</button>
+            <button class="filter-button" data-filter="أخبار وتقنية">أخبار وتقنية</button>
+            <button class="filter-button" data-filter="مقالات">مقالات</button>
+          </div>
+          <span class="results-label" id="resultsLabel">جاري عرض المنشورات</span>
+        </div>
+
+        <div class="posts-grid" id="postsGrid" aria-live="polite"></div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <span>⌕</span>
+          <h3>لم نعثر على نتائج</h3>
+          <p>جرّب كلمة بحث أخرى أو اختر قسمًا مختلفًا.</p>
+          <button class="button button-outline" id="resetSearch">عرض جميع المنشورات</button>
+        </div>
+
+        <div class="posts-bottom">
+          <span>تُضاف المنشورات من إدارة الموقع فقط.</span>
+          <a href="#about" class="text-link">تعرّف على NEXORA <span>←</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ad-section" aria-label="مساحة إعلانية">
+      <div class="container">
+        <div class="ad-placeholder">
+          <span class="ad-label">AD SPACE</span>
+          <span class="ad-symbol">▦</span>
+          <div><strong>مساحة إعلانية</strong><small>مكان مخصص لإعلانات الموقع بعد ربط شبكة إعلانية مناسبة.</small></div>
+          <span class="ad-size">RESPONSIVE</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-layout">
+        <div class="about-visual">
+          <div class="about-visual-frame">
+            <span class="about-big-symbol">N<span>X</span></span>
+            <span class="about-orbit about-orbit-one"></span>
+            <span class="about-orbit about-orbit-two"></span>
+            <span class="about-chip">PLAY · LEARN · SHARE</span>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <span class="section-kicker">ABOUT NEXORA PS</span>
+          <h2>أكثر من مجرد موقع.<br><span class="gradient-text">إنه عالمك التقني.</span></h2>
+          <p>
+            NEXORA PS منصة تجمع شروحات البلايستيشن والأدوات والتطبيقات
+            والمقالات التقنية في تجربة واضحة وسهلة الاستخدام.
+            الهدف هو أن تجد المعلومة التي تحتاجها دون تشتت.
+          </p>
+
+          <div class="about-points">
+            <div><span>✓</span> محتوى منظم وسهل الوصول</div>
+            <div><span>✓</span> شرح واضح وروابط مرتبة</div>
+            <div><span>✓</span> تعليقات للنقاش بعد تفعيل الحسابات</div>
+          </div>
+
+          <a href="#posts" class="button button-primary button-large">ابدأ الاستكشاف <span>←</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="community-section">
+      <div class="container community-banner">
+        <div class="community-decoration" aria-hidden="true">✳</div>
+        <div class="community-copy">
+          <span class="section-kicker">JOIN THE COMMUNITY</span>
+          <h2>كن جزءًا من مجتمع <span class="gradient-text">NEXORA</span></h2>
+          <p>سجّل في النسخة التجريبية وتفاعل مع المنشورات عبر التعليقات.</p>
+        </div>
+        <button class="button button-primary button-large" id="communityJoin">إنشاء حساب <span>↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="#home">
+            <span class="brand-symbol">N<span>X</span></span>
+            <span class="brand-copy">
+              <strong>NEXORA <b>PS</b></strong>
+              <small>PLAY · EXPLORE · DISCOVER</small>
+            </span>
+          </a>
+          <p>وجهتك للشروحات والأدوات والمحتوى التقني لعشاق الألعاب.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>استكشف</h3>
+          <a href="#categories">الأقسام</a>
+          <a href="#posts">المنشورات</a>
+          <a href="#about">عن الموقع</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>معلومات</h3>
+          <a href="#about">من نحن</a>
+          <a href="#contact">سياسة الخصوصية</a>
+          <a href="#contact">شروط الاستخدام</a>
+        </div>
+
+        <div class="footer-column" id="contact">
+          <h3>تابعنا</h3>
+          <a href="#" data-demo-link="أضف رابط قناتك على تيليغرام">تيليغرام ↗</a>
+          <a href="#" data-demo-link="أضف رابط قناتك على يوتيوب">يوتيوب ↗</a>
+          <a href="#" data-demo-link="أضف رابط حسابك الاجتماعي">شبكات التواصل ↗</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> NEXORA PS. جميع الحقوق محفوظة.</span>
+        <span class="footer-status"><span class="live-dot"></span> صُنع بشغف لعشاق التقنية</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- نافذة تفاصيل المنشور والتعليقات -->
+  <dialog class="modal article-modal" id="articleDialog">
+    <div class="modal-header">
+      <a class="brand mini-brand" href="#home">
+        <span class="brand-symbol">N<span>X</span></span>
+        <span class="brand-copy"><strong>NEXORA <b>PS</b></strong></span>
+      </a>
+      <button class="modal-close" data-close="articleDialog" aria-label="إغلاق">×</button>
+    </div>
+    <div id="articleDetails" class="article-details"></div>
+    <section class="comments-section">
+      <div class="comments-heading">
+        <div><span class="section-kicker">COMMUNITY</span><h3>التعليقات <span id="commentsCount">0</span></h3></div>
+      </div>
+      <div id="commentsList" class="comments-list"></div>
+      <form id="commentForm" class="comment-form">
+        <label for="commentText">شارك برأيك</label>
+        <textarea id="commentText" rows="3" maxlength="1000" placeholder="اكتب تعليقًا محترمًا ومفيدًا..." required></textarea>
+        <div class="comment-form-bottom">
+          <small id="commentHint">سجّل الدخول للمشاركة في النقاش.</small>
+          <button class="button button-primary" type="submit">نشر التعليق ↗</button>
+        </div>
+      </form>
+    </section>
+  </dialog>
+
+  <!-- نافذة الحساب التجريبي -->
+  <dialog class="modal account-modal" id="accountDialog">
+    <div class="modal-header">
+      <a class="brand mini-brand" href="#home">
+        <span class="brand-symbol">N<span>X</span></span>
+        <span class="brand-copy"><strong>NEXORA <b>PS</b></strong></span>
+      </a>
+      <button class="modal-close" data-close="accountDialog" aria-label="إغلاق">×</button>
+    </div>
+
+    <div class="account-content">
+      <div class="account-icon">✦</div>
+      <span class="section-kicker">WELCOME TO NEXORA</span>
+      <h2 id="accountTitle">أنشئ حسابك</h2>
+      <p id="accountSubtitle">انضم إلى المجتمع وتفاعل مع المنشورات.</p>
+
+      <div class="account-tabs">
+        <button type="button" class="account-tab active" data-mode="register">حساب جديد</button>
+        <button type="button" class="account-tab" data-mode="login">تسجيل الدخول</button>
+      </div>
+
+      <form id="accountForm" class="account-form">
+        <label id="nameFieldWrap">الاسم المستعار
+          <input id="accountName" type="text" minlength="2" maxlength="32" placeholder="كيف نناديك؟" autocomplete="nickname" required>
+        </label>
+        <label>البريد الإلكتروني
+          <input id="accountEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+        </label>
+        <label>كلمة المرور
+          <input id="accountPassword" type="password" minlength="6" placeholder="6 أحرف على الأقل" autocomplete="current-password" required>
+        </label>
+        <button class="button button-primary button-large account-submit" type="submit" id="accountSubmit">إنشاء الحساب ↗</button>
+        <p class="account-notice">هذه واجهة تجريبية فقط؛ لا تدخل كلمة مرور تستخدمها في حساب حقيقي.</p>
+      </form>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
